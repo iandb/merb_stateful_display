@@ -1,0 +1,14 @@
+merb_stateful_display
+=====================
+
+stateful_display()
+Works like display, but checks to see if the object has a 'state'
+method.  Especially useful in show and edit, where it will check 
+a given object and look for a template to match the current state
+of the object.
+
+EX:
+  @ord = Order.state = 'in_cart'
+  stateful_display(@ord)
+or the shorter sdisplay() alias
+
