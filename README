@@ -10,7 +10,7 @@ of the object.
 EX:
 def show
   ...
-  @ord = Order.state = 'in_cart'
+  @ord.state = 'in_cart'
   sdisplay(@ord)
 end
 
