@@ -11,9 +11,8 @@ EX:
 def show
   ...
   @ord = Order.state = 'in_cart'
-  stateful_display(@ord)
+  sdisplay(@ord)
 end
-or the shorter sdisplay() alias
 
 Looks for a template named "show_in_cart.html.erb" else it falls
 back to a standard behavior of "show.html.erb"
