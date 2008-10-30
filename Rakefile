@@ -6,10 +6,6 @@ require 'merb-core/tasks/merb'
 
 GEM_NAME = "merb_stateful_display"
 GEM_VERSION = "0.0.1"
-AUTHOR = "Your Name"
-EMAIL = "Your Email"
-HOMEPAGE = "http://merbivore.com/"
-SUMMARY = "Merb plugin that provides ..."
 
 spec = Gem::Specification.new do |s|
   s.rubyforge_project = 'merb'
@@ -18,11 +14,11 @@ spec = Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.has_rdoc = true
   s.extra_rdoc_files = ["README", "LICENSE", 'TODO']
-  s.summary = SUMMARY
+  s.summary = "Simple extension of Merb's display() that chooses templates based on an object's state"
   s.description = s.summary
-  s.author = AUTHOR
-  s.email = EMAIL
-  s.homepage = HOMEPAGE
+  s.authors = ["Michael D. Ivey", "Shay Arnett"]
+  s.email = "info@iveyandbrown.com"
+  s.homepage = "http://github.com/iandb/merb_stateful_display"
   s.add_dependency('merb', '>= 0.9.10')
   s.require_path = 'lib'
   s.files = %w(LICENSE README Rakefile TODO) + Dir.glob("{lib,spec}/**/*")
