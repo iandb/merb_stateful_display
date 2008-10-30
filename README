@@ -8,7 +8,13 @@ a given object and look for a template to match the current state
 of the object.
 
 EX:
+def show
+  ...
   @ord = Order.state = 'in_cart'
   stateful_display(@ord)
+end
 or the shorter sdisplay() alias
+
+Looks for a template named "show_in_cart.html.erb" else it falls
+back to a standard behavior of "show.html.erb"
 

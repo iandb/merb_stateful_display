@@ -15,10 +15,10 @@ module MerbStatefulDisplay
       end
       begin
         nopts = opts.dup
-        nopts[:template] ||= "#{action_name}_#{object.send(state_method)}".to_sym
-        display(object, thing, nopts)
-      rescue TemplateNotFound
-        display(object, thing, opts)
+        template ||= "#{action_name}_#{object.send(state_method)}".to_sym
+        display(object, template, nopts)
+      rescue
+        display(object, action_name.to_sym, opts)
       end
     end
   end

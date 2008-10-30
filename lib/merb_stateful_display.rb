@@ -9,6 +9,6 @@ if defined?(Merb::Plugins)
   }
   
   Merb::BootLoader.after_app_loads do
-    Application.include(MerbStatefulDisplay::InstanceMethods)
+    Application.send(:include,MerbStatefulDisplay::InstanceMethods)
   end
 end
