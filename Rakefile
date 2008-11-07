@@ -19,7 +19,7 @@ spec = Gem::Specification.new do |s|
   s.authors = ["Michael D. Ivey", "Shay Arnett"]
   s.email = "info@iveyandbrown.com"
   s.homepage = "http://github.com/iandb/merb_stateful_display"
-  s.add_dependency('merb', '>= 0.9.10')
+  s.add_dependency('merb-core', '>= 0.9.10')
   s.require_path = 'lib'
   s.files = %w(LICENSE README Rakefile TODO) + Dir.glob("{lib,spec}/**/*")
   
