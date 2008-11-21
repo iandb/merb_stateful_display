@@ -17,7 +17,7 @@ module MerbStatefulDisplay
         nopts = opts.dup
         template ||= "#{action_name}_#{object.send(state_method)}".to_sym
         display(object, template, nopts)
-      rescue
+      rescue Merb::ControllerExceptions::NotAcceptable
         display(object, action_name.to_sym, opts)
       end
     end
